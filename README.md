@@ -1,2 +1,2 @@
 # node-bash
-Run bash scripts using node.js and browser
+Run bash scripts in browser using node.js
