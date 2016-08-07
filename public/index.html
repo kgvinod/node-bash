@@ -6,7 +6,7 @@
     <script>
       $(document).ready(function() {
           $('.run-button').click(function() {
-              //alert("button clicked");
+              // alert("button clicked");
               var txt = $("input").val();
               $.post("run_cmd", {cmd: txt}, function(result) {
                   $("span").html(result);
@@ -31,7 +31,7 @@
         <input type="text">
         <button class="run-button">Run Cmd</button>
         <p>Output:
-          <span></span>
+          <pre><span></span></pre>
         </p>
     </ul>
   </body>

@@ -7,7 +7,7 @@ var util = require('util');
 
 app.use(express.static(__dirname + '/public'));
 
-//Here we are configuring express to use body-parser as middle-ware.
+//Configure express to use body-parser as middle-ware.
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
@@ -24,12 +24,13 @@ app.post('/run_cmd', function (req, res) {
     
     exec(req.body.cmd, function (error, stdout, stderr) {
       if (error) {
-        console.error('exec error: ${error}');
-        return;
+        console.error(error);
+        //return;
       }
-      console.log("stdout " + stdout);
-      res.send(stdout);
-      console.log("stderr " + stderr);
+      //console.log("stdout " + stdout);
+      res.send(stderr + stdout);
+      //res.send((error != null)?error:"" + (stderr != null)?stderr:"" + (stdout != null)?stdout:"");
+      //console.log("stderr " + stderr);
       //res.send(stderr);
     });    
 
