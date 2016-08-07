@@ -9,7 +9,7 @@
               // alert("button clicked");
               var txt = $("input").val();
               $.post("run_cmd", {cmd: txt}, function(result) {
-                  $("span").html(result);
+                  $("textarea").html(result);
               });
           });
       });
@@ -26,14 +26,21 @@
         </td>
       </tr>
     </table>
-    <ul>
-      <li>
-        <input type="text">
-        <button class="run-button">Run Cmd</button>
-        <p>Output:
-          <pre><span></span></pre>
-        </p>
-    </ul>
+    <table border="0" cellpadding="10">    
+      <tr>
+        <td>
+          <input type="text">
+          <button class="run-button">Run Cmd</button>
+        </td>
+       </tr>
+       <tr> 
+         <td>
+           <p>Output:</p>
+           <pre><span></span></pre>
+           <textarea rows="25" cols="80" style="color: #00ff00; background-color: black" wrap="off"></textarea>          
+         </td>
+        </tr>
+    </table>        
   </body>
 </html>
 
