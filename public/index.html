@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Run Shell Commands</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $('.run-button').click(function() {
+              //alert("button clicked");
+              var txt = $("input").val();
+              $.post("run_cmd", {cmd: txt}, function(result) {
+                  $("span").html(result);
+              });
+          });
+      });
+    </script>
+  </head>
+  <body bgcolor=white>
+    <table border="0" cellpadding="10">
+      <tr>
+        <td>
+          <img src="images/terminal.png">
+        </td>
+        <td>
+          <h1>Run Shell Commands</h1>
+        </td>
+      </tr>
+    </table>
+    <ul>
+      <li>
+        <input type="text">
+        <button class="run-button">Run Cmd</button>
+        <p>Output:
+          <span></span>
+        </p>
+    </ul>
+  </body>
+</html>
+
