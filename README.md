@@ -6,13 +6,13 @@ clone the repository
 
 cd to node-bash
 
-run npm install
+run 'npm install'
 
-run node app.js
+run 'node app.js'
 
 Point the browser to localhost:3000
 
-Run shell commands
+Run shell commands in the browser
 
 # Possible uses
 Front end UI for shell scripts
