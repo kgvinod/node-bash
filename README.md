@@ -15,5 +15,5 @@ Point the browser to localhost:3000
 Run shell commands in the browser
 
 # Possible uses
-Front end UI for shell scripts
+Create front end web UI for shell scripts
 
