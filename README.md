@@ -1,6 +1,8 @@
 # node-bash
 Run bash scripts in browser using node.js
 
+![alt text](screenshot.png "node-bash screenshot")
+
 # How to use
 clone the repository
 
