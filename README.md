@@ -1,5 +1,5 @@
 # node-bash
-Run bash scripts in browser using node.js
+Run shell scripts in browser using node.js
 
 ![alt text](screenshot.png "node-bash screenshot")
 
